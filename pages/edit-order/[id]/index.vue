@@ -10,7 +10,7 @@ const router = useRouter()
 
 const currentOrder = orderStore.getProductById(Number(route.params.id))
 
-// Сделаем редактируемые копии:
+// Making editable copies:
 const client = ref(currentOrder.client)
 const category = ref(currentOrder.slug)
 const status = ref(currentOrder.status)
